@@ -1,0 +1,128 @@
+/*
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Atomic Age', cursive;
+font-family: 'Unica One', cursive;
+font-family: 'Crimson Pro', serif;
+font-family: 'Vollkorn', serif;
+font-family: 'Yrsa', serif;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Atomic Age', cursive;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Cinzel Decorative', cursive;
+ */
+p::first-letter{
+	font-size: 200%;
+	font-weight: bold;
+}
+.name{
+	color: #3409ab;
+	font-family: 'Cinzel Decorative', cursive;
+	transition: color 1s;
+	-webkit-transition:color 1s;
+}
+.name:hover{
+	color: black;
+}
+.carousel-inner img{
+	height: 600px;
+	width: 100%;
+}
+.box{
+	padding-top: 85px;
+	background: #BDBDBD;
+	min-height: 520px;
+}
+
+.custombtn{
+	text-align: center;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #f1f1f1;
+	margin:10px;
+	border-radius: 30%;
+	box-shadow: 0px 5px 15px -5px #00000070;
+	color: #3498db;
+	position: relative; 
+	overflow: hidden;
+}
+.custombtn i{
+	line-height: 50px;
+	font-size: 24px;
+	transition: 0.2s linear;
+}
+.custombtn:hover i{
+	transform: scale(1.3);
+	color: #f1f1f1;
+}
+.custombtn::before{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: #3498db;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+.custombtn:hover::before{
+	animation: anima .7s 1;
+	top: -10%;
+	left: -10%;
+}
+@keyframes anima {
+	0%{
+		left: -110%;
+		top: 90%;
+		}50%{
+			left: 10%;
+			top: -30%;
+
+		}100%{
+			left: -10%;
+			top:-10%;
+		}
+}
+.about{
+	text-align: center;
+	margin-top: 7px;
+}
+.about h2{
+	display: inline-block;
+	padding:5px; 
+ 	border: 1px solid black;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.contact i{
+	float: left;
+	font-size: 30px;
+	padding-right: 10px;
+	transition: .7s linear;
+}
+.contact i:hover{
+	color: #F9424B;
+	transform: scale(1.2);
+}
+.contact_info{
+	background: #BDBDBD;
+}
+.education{
+	background: #BDBDBD;
+	min-height: 345px;
+}
+.info{
+	padding-top: 15px;
+}
+.info a{
+	text-decoration: none;
+	color: #000;
+	transition: 1s linear;
+}
+.info a:hover{
+	color: #3498db;
+}
+#footer h3{
+	padding:10px;
+	font-size: 16px;
+}
